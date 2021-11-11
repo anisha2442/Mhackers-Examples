@@ -1,0 +1,9 @@
+flag.txt was zipped and then appended to the end of ironman.jpg with the following command:
+"cat flag.zip >> ironman.jpg". To zip a file you can either right click on the file and zip it or run the following command "tar -czvf [NAME OF ZIP FILE].tar.gz [PATH TO STORE ZIP FILE]".
+
+Here are a couple ways to find the flag (though there are probably more):
+1) Open up the image in notepad scroll all the way to the bottom to find signs that a zip file was added OR run "binwalk -b ironman.jpg" to see that this is a jpg file with a zip file within (you can then proceed to extract the zip file using the method below).
+
+2) Running "binwalk -e ironman.jpg" will extract the contents of ironman.jpg into a new folder. There you will find flag.txt.
+
+flag: flag{have_you_ever_tried_shawarma}

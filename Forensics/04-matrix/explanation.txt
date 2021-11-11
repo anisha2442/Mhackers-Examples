@@ -1,0 +1,6 @@
+To create this challenge the following command was run to change the value of a metadata tag within the image to contain the flag:
+"exiftool -DocumentID="flag{red_or_blue_pill}" matrix.jpg"
+
+To find the flag you can just run "exiftool matrix.jpg" and see that the Document ID field contains the flag
+
+flag: flag{red_or_blue_pill}

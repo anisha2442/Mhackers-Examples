@@ -1,0 +1,8 @@
+This challenge was made by storing the password in a pdf file and then changing the file extension from pdf to jpg, essentially "breaking" it.
+
+To get the password:
+1) Using a binary editor or opening the file in notepad allows us to see the file signature. Notice that the file signature is pdf despite the file extension being jpg. Running "binwalk -b world_map.jpg" also shows that the file is actually a pdf and not a jpg.
+
+2) After identifying that the file is a pdf, just change the file extension from jpg to pdf, open up the file, and find the password.
+
+password: :$qu1dG@m3$

@@ -1,0 +1,9 @@
+flag.txt was hidden inside of babygroot.jpg with the following command:
+"cat flag.txt >> babygroot.jpg"
+
+Here are a couple ways to find this flag (though there are probably more):
+1) Open up the image in notepad and search for "flag{" (or scroll all the way to the bottom) to find the contents of flag.txt appended to the image file.
+
+2) run the following command "strings babygroot.jpg | grep "flag{"" which turns the image into strings and then only displays strings that contain "flag{". If you have a situation where you want to ignore case then run "strings babygroot.jpg | grep -i "flag{"".
+
+flag: flag{i_am_groot}
